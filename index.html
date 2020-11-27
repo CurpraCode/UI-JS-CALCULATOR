@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curpra Calc</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="calc-body">
+      <input type="text" id="display" name="display" autocomplete="off" />
+
+      <div class="btn-box">
+        <button id="btn-clr" onclick="clearFun()">CE</button>
+        <button id="btn-clr" onclick="singleClear()">DEL</button>
+        <button id="btn-clr" onclick="calcFun('+')">+</button>
+        <button onclick="calcFun(7)">7</button>
+        <button onclick="calcFun(8)">8</button>
+        <button id="btn-clr" onclick="calcFun('-')">-</button>
+        <button onclick="calcFun(9)">9</button>
+        <button onclick="calcFun(4)">4</button>
+        <button id="btn-clr" onclick="calcFun('*')">x</button>
+        <button onclick="calcFun(5)">5</button>
+        <button onclick="calcFun(6)">6</button>
+        <button id="btn-clr" onclick="calcFun('/')">/</button>
+        <button onclick="calcFun(1)">1</button>
+        <button onclick="calcFun(2)">2</button>
+        <button id="btn-clr" onclick="calcFun('%')">%</button>
+        <button onclick="calcFun(3)">3</button>
+        <button onclick="calcFun(0)">0</button>
+        <button id="btn-clr" onclick="calcFun('.')">.</button>
+
+        <button id="btn-equal" onclick="sumUp()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
